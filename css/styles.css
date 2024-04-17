@@ -1,0 +1,50 @@
+body {
+    background-image: linear-gradient(90deg, #7d5fff, #7158e2);
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    place-content: center;
+}
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    background-color: white;
+    height: 50px;
+    width: auto;
+    overflow: hidden;
+    min-width: 50px;
+    transition: 300ms;
+}
+
+
+#search {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    width: 0px;
+    height: 40px;
+    transition: 300ms;
+
+}
+
+#search.active + .btn {
+    margin-right: 10px;
+}
+#search.active {
+    display: block;
+    width: 175px;
+    animation: show 300ms linear;
+    margin-left: 15px;
+}
+
+.btn {
+    justify-self: end;
+    font-size: 30px;
+    font-weight: bolder;
+    cursor: pointer;
+}
